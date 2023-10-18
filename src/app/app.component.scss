@@ -35,6 +35,6 @@ $default-color: green;
 
 .footer {
   @include site-skeleton();
-  position: absolute;
+  position: sticky;
   bottom: 0;
 }

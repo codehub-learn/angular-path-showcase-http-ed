@@ -6,6 +6,8 @@ import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './parent/child/child.component';
 import { ItemListComponent } from './item-list/item-list.component';
 import { ItemShowcaseComponent } from './item-showcase/item-showcase.component';
+import {HttpClientModule} from "@angular/common/http";
+import { CountryListComponent } from './components/country-list/country-list.component';
 
 @NgModule({
   declarations: [
@@ -13,10 +15,12 @@ import { ItemShowcaseComponent } from './item-showcase/item-showcase.component';
     ParentComponent,
     ChildComponent,
     ItemListComponent,
-    ItemShowcaseComponent
+    ItemShowcaseComponent,
+    CountryListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
