@@ -1,0 +1,40 @@
+@use "src/assets/css/my-style.scss";
+
+$default-color: green;
+
+.item-body {
+  display: flex;
+  justify-content: start;
+}
+
+.item-list {
+  border: 1px solid black;
+  width: 50%;
+}
+
+.item-showcase {
+  border: 1px solid black;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $default-color;
+}
+
+@mixin site-skeleton($background-color: brown) {
+  background-color: $background-color;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  @include site-skeleton(antiquewhite);
+}
+
+.footer {
+  @include site-skeleton();
+  position: absolute;
+  bottom: 0;
+}
